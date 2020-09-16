@@ -9,14 +9,11 @@
 
 
 <div class="rooms">
+ <%= current_user.situations.each do |situation|%>
   <div class="room">
     <div class="room-name">
-      <a href="#">techroom1</a>
+      <a href="#"><%= situation.name%></a>
     </div>
-  </div>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">techroom2</a>
-    </div>
-  </div>
+   </div>
+  <% end %>
 </div>
