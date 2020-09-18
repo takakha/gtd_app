@@ -15,6 +15,10 @@ class SituationsController < ApplicationController
     end
   end
 
+  def show
+    @situation = Situation.find(params[:id])
+  end
+
 private
 
   def situation_params
