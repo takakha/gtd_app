@@ -1,4 +1,9 @@
 <div class="message">
     <!-- 投稿したメッセージ内容を記述する -->
 <h1> tesuto </h1>
+<% @purposes.each do |f|%>
+<div class ="purpose-text">
+ <%= f.text%>
+</div>
+<%end%>
 </div>

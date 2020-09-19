@@ -1,6 +1,7 @@
 class PurposesController < ApplicationController
   
   def index
+    @purposes = Purpose.all
     @situation = Situation.find(params[:situation_id])
     @purpose = Purpose.new
   end 
